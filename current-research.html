@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes" charset="utf-8"/>
+    <title>current-research</title>
+  </head>
+  <style>
+  p {
+  text-align: center;
+  margin-left:50px;
+  margin-right:50px;
+  font-family:Garamond;
+  font-size:18px;
+  font-weight:900;
+  }
+
+body{
+   background-color:black;
+
+}
+
+@keyframes manuscripts{
+   0%{
+   /* (c)British Library Board (Egerton 2787) */
+     background-image: url(images/913.png);
+   }
+   50%{
+   /* (c)Cambridge University Library (Codex Bezae Cantabrigiensis) */
+     background-image: url(images/codex_bezae3_1.png);
+   }
+   100%{
+   /* (c)Valamo Monastery (XII 270) */
+     background-image: url(images/slavic.png);
+   }
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+   width:100%;
+   height: 100%;
+   color:white;
+   margin:auto;
+   text-align: center;
+
+
+}
+.row {
+  width:100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-top:250px;
+
+
+}
+
+.header {
+  text-align: center;
+  height:200px;
+  position:fixed;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: manuscripts;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat:no-repeat;
+  top:0;
+  left:0;
+  right:0;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+.footer {
+  height:200px;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-name: manuscripts;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  background-repeat:no-repeat;
+  text-align: center;
+  color:black;
+  position:fixed;
+  bottom:0;
+  left:0;
+  right:0;
+  margin:auto;
+  width: 100%;
+}
+
+.header a {
+  color:white;
+  #background-color: black;
+  font-family:Garamond;
+  font-size:18px;
+  font-weight: 700;
+  margin:auto;
+  display: grid;
+  grid-template-columns: repeat(7, minmax(2, 2fr));
+  box-shadow: inset 0 0 0 0 black;
+  color: black;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+
+.header a:link,a:visited {
+  text-decoration: none;
+  padding: 14px 50px;
+  display: inline-block;
+}
+
+.header a:hover {
+  box-shadow: inset 220px 0 0 0 black;
+  color: white;
+  }
+.column a {
+  color:white;
+  font-family:Garamond;
+  font-size:18px;
+  font-weight: 700;
+  margin:auto;
+  box-shadow: inset 0 0 0 0 white;
+  color: white;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.column a:link,a:visited {
+  text-decoration: none;
+  }
+
+.column a:hover {
+  box-shadow: inset 220px 0 0 0 white;
+  color: black;  }
+
+.footer a {
+  color:black;
+  font-family:Garamond;
+  font-size:18px;
+  font-weight: 700;
+  margin:auto;
+  box-shadow: inset 0 0 0 0 white;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+  }
+.footer a:link,a:visited {
+  text-decoration: none;
+  padding: 14px 50px;
+
+  }
+
+.footer a:hover {
+  box-shadow: inset 220px 0 0 0 black;
+  color: white;  }
+a:active {
+    text-decoration: none;
+}
+</style>
+<div class="header">
+    <br>
+    <a href="/index.html">Home</a>
+    <a href="/previous-projects.html">Previous projects</a>
+    <a href="/my-work.html">My work</a>
+    <a href="/current-research.html">Current research</a>
+    <a href="/relate.html"">Relate</a>
+    </div>
+ <body>
+<div class="row">
+    <div class="column">
+        <p style="font-size:35px;  text-align: center;">Current research</p>
+        <a href="https://aamunkoitto.fi/kulttuuri/valamon-luostarille-100-000-euron-apuraha-arvokas-kasikirjoituskokoelma">Virtual Valamo</a>
+        <br><br><br>
+        <a href="https://github.com/PasHyde/relate">Relate</a>
+    </div>
+    <div class="column">
+        <img src="images/selfie4.png" width="350px" height="450px" style="position:fixed;">
+    </div>
+</div>
+ </body>
+ <div class="footer">
+     <br><br><br><br><br><br><br>
+         <br>
+         <a href= "mailto: pasi.hyytiainen@valamo.fi">Contact me</a>
+ </div>
+</html>
+
+
